@@ -5,21 +5,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Couples</title>
         <link rel="stylesheet" href="style.css">
-        <script href="script.js"></script>
+        <link rel="stylesheet" href="'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        
     </head>
     <body>
-        <div class="main">
-            <div class="state">
-                <h1 class="state__title">Пары</h1>
-                <p>Шаги:0 шагов</p>
-                <p>Время:60 секунд</p>
-                <p>Настроить кол-во карточек(от 2 до 6)</p>
-                <div>
-                    <input type="number" class="board__input" placeholder="по горинзотал/вертикали">
-                    <button>Начать</button>
+        <div class="content">
+            <main class="main">
+                <div class="state">
+                    <h1 class="state__title">Пары</h1>
+                    <p>Шаги:0 шагов</p>
+                    <p>Время:60 секунд</p>
                 </div>
-            </div>
-            
+                <div class="board" id="gameBoard">
+                    <h2 class="board__title">Настроить кол-во карточек(от 2 до 6)</h2>
+                    <form action="" class="board__form">
+                        <input type="number" class="board__input" placeholder="по горинзотал/вертикали">
+                        <button class="board__button button">Начать</button>
+                    </form>
+                </div>
+            </main>
         </div>
+        
+        <template id="gameTableTemplate">
+            <div class="table">
+
+            </div>
+            <button class="table__button button">Рестарт</button>
+        </template>
+
+        <template id="cardTemplate">
+            <div class="card">
+                <i class="flipped-icon fa" id="flippedIcon"></i>
+                <i class="default-icon fa fa-question-circle"></i>
+            </div>
+        </template>
+
+        <script src="script.js"></script>
     </body>
 </html>
