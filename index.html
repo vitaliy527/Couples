@@ -13,8 +13,8 @@
             <main class="main">
                 <div class="state">
                     <h1 class="state__title">Пары</h1>
-                    <p>Шаги:0 шагов</p>
-                    <p>Время:60 секунд</p>
+                    <p class="state__moves">Шаги:0 шагов</p>
+                    <p class="state__time">Время:60 секунд</p>
                 </div>
                 <div class="board" id="gameBoard">
                     <h2 class="board__title">Настроить кол-во карточек(от 2 до 6)</h2>
@@ -26,12 +26,12 @@
             </main>
         </div>
         
-        <template id="gameTableTemplate">
+        <div id="gameTableTemplate">
             <div class="table">
 
             </div>
             <button class="table__button button">Рестарт</button>
-        </template>
+        </div>
 
         <template id="cardTemplate">
             <div class="card">
