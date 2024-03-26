@@ -46,8 +46,6 @@ function createBoard(columns, counts){
     tableButton.addEventListener("click", ()=> {
         location.reload();
     })
-  
-    
 }
 function createCard(flippedIcon){
     const cardTemplate = document.querySelector("#cardTemplate").cloneNode(true).content;
